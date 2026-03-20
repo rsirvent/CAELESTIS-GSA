@@ -1,0 +1,45 @@
+Port 43595 is already in use or time_wait, incrementing port by 1
+------ Launching COMPSs application ------
+PROVENANCE | Setting 'graph' to 'true' by default
+PROVENANCE | Setting YAML to 'CAELESTIS-GSA.yaml'
+PROVENANCE | Zipping the resulting COMPSs RO-Crate
+PROVENANCE | Setting provenance folder to '55_NODES_MN5'
+[ INFO ] Inferred PYTHON language
+[ INFO ] Using default execution type: compss
+PROVENANCE | PROFILING | Profiling interval set to 5 second(s)
+
+----------------- Executing api.py --------------------------
+
+[(513)    API]  -  Starting COMPSs Runtime v3.4 (build 20260319-0106.re21516cd39a298c6bc9691761b2b720d3fafb2ef)
+[(956302)    API]  -  Execution Finished
+
+------------------------------------------------------------
+PROVENANCE | STARTING WORKFLOW PROVENANCE SCRIPT
+PROVENANCE | Destination folder: 55_NODES_MN5
+PROVENANCE | If needed, Provenance generation can be triggered by hand using the following commands:
+	/apps/GPP/COMPSs/TrunkRSP/Runtime/scripts/utils/compss_gengraph svg /home/bsc/bsc019057/.COMPSs/37994037//monitor/complete_graph.dot
+	export PYTHONPATH=/apps/GPP/COMPSs/TrunkRSP/Runtime/scripts/system/:$PYTHONPATH
+	python3 /apps/GPP/COMPSs/TrunkRSP/Runtime/scripts/system/provenance/generate_COMPSs_RO-Crate.py CAELESTIS-GSA.yaml /home/bsc/bsc019057/.COMPSs/37994037/ 55_NODES_MN5 true
+PROVENANCE | TIP for BSC cluster users: before triggering generation by hand, run first: salloc --account=<your_group> --qos=gp_debug -p interactive
+PROVENANCE | Generating graph for Workflow Provenance
+PROVENANCE | Number of edges in the graph: 3527
+Output file: /home/bsc/bsc019057/.COMPSs/37994037//monitor/complete_graph.svg
+INFO: Generating Graph with legend
+DONE
+PROVENANCE | Ended generating graph for Workflow Provenance. TIME: 6 s
+PROVENANCE | STARTING RO-CRATE GENERATION SCRIPT
+PROVENANCE | PROFILING | Profiling plots generation TIME: 49.28 s.
+PROVENANCE | COMPSs version: '3.4', main_entity: '/gpfs/projects/bsc19/bsc019057/GENERAL-SENSITIVITY-ANALYSIS/Workflows/WORKFLOWS/api.py'
+PROVENANCE | COMPSs runtime detected inputs (0)
+PROVENANCE | COMPSs runtime detected outputs (0)
+PROVENANCE | dataprovenance.log processing TIME: 0.0225372314453125 s
+PROVENANCE | 'softwareRequirements' dependency correctly added: Alya ()
+PROVENANCE | Application source files detected (23)
+PROVENANCE | RO-Crate adding source files TIME: 0.013212919235229492 s
+PROVENANCE | Manually added data assets as 'inputs' (1)
+PROVENANCE | Manually added data assets as 'outputs' (1)
+PROVENANCE | RO-Crate adding input files TIME (Persistence: True): 0.007826089859008789 s
+PROVENANCE | RO-Crate adding output files TIME (Persistence: True): 0.004495859146118164 s
+PROVENANCE | Added resource profiling information TIME: 0.13956141471862793 s
+PROVENANCE | RO-Crate adding CreateAction TIME: 0.15193986892700195 s
+PROVENANCE | RO-Crate Provenance Run Crate profile total TIME: 1.1484806537628174 s

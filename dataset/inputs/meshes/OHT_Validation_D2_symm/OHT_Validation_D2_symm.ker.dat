@@ -1,0 +1,41 @@
+$-------------------------------------------------------------------
+PHYSICAL_PROBLEM
+END_PHYSICAL_PROBLEM
+$-------------------------------------------------------------------
+NUMERICAL_TREATMENT
+  MESH
+    MULTIPLICATION
+      LEVEL= 0
+      ELEMENT_NORMAL_MULTIPLICATION: OFF
+      PARALLELIZATION:               GLOBAL
+    END_MULTIPLICATION
+    SAVE_ELEMENT_DATA_BASE: ON
+  END_MESH
+  DISCRETE_FUNCTIONS
+    TOTAL_NUMBER= 2
+    FUNCTIONS= DISPL, DIMENSIONS= 3
+      TIME_SHAPE: SMOOTH
+      SHAPE_DEFINITION:
+        2
+        0.0        0.0  0.0      0.0
+        1.35544e-03  0.0  0.487959 0.0
+      END_SHAPE_DEFINITION
+    END_FUNCTIONS
+    FUNCTIONS= VELOC, DIMENSIONS= 3
+      TIME_SHAPE: SMOOTH
+      SHAPE_DEFINITION:
+        3
+        0.0      0.0     0.0  0.0
+        0.25e-3  0.0  1500.0  0.0
+        0.50e-3  0.0  1500.0  0.0
+      END_SHAPE_DEFINITION
+    END_FUNCTIONS
+  END_DISCRETE_FUNCTIONS
+END_NUMERICAL_TREATMENT
+$-------------------------------------------------------------------
+OUTPUT_&_POST_PROCESS 
+  NO_MESH
+$  ON_LAST_MESH 
+$  STEPS= 1E+4 
+END_OUTPUT_&_POST_PROCESS 
+$-------------------------------------------------------------------
