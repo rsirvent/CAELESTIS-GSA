@@ -1,0 +1,59 @@
+[EXECUTOR] executeTask - Error in task execution
+es.bsc.compss.types.execution.exceptions.JobExecutionException: Job 29 exit with value 1
+	at es.bsc.compss.invokers.external.piped.PipedInvoker.invokeExternalMethod(PipedInvoker.java:296)
+	at es.bsc.compss.invokers.external.ExternalInvoker.invokeMethod(ExternalInvoker.java:400)
+	at es.bsc.compss.invokers.Invoker.invoke(Invoker.java:350)
+	at es.bsc.compss.invokers.Invoker.runInvocation(Invoker.java:302)
+	at es.bsc.compss.executor.Executor.runInvocation(Executor.java:540)
+	at es.bsc.compss.executor.Executor.redirectStreamsAndRun(Executor.java:473)
+	at es.bsc.compss.executor.Executor.filesWrapperAndRun(Executor.java:406)
+	at es.bsc.compss.executor.Executor.sandBoxWrapperAndRun(Executor.java:377)
+	at es.bsc.compss.executor.Executor.resourcesWrapperAndRun(Executor.java:356)
+	at es.bsc.compss.executor.Executor.totalTimerAndTracingWrapperAndRun(Executor.java:330)
+	at es.bsc.compss.executor.Executor.execute(Executor.java:306)
+	at es.bsc.compss.executor.Executor.processInvocation(Executor.java:267)
+	at es.bsc.compss.types.execution.InvocationExecutionRequest.run(InvocationExecutionRequest.java:60)
+	at es.bsc.compss.executor.Executor.processRequests(Executor.java:232)
+	at es.bsc.compss.executor.Executor.run(Executor.java:184)
+	at es.bsc.compss.execution.ExecutionPlatform$4.run(ExecutionPlatform.java:269)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+rker worker - Traceback (most recent call last):
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/worker/commons/worker.py", line 375, in task_execution
+    task_output = getattr(module, method_name)(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/api/task.py", line 164, in task_decorator
+    return self.__decorator_body__(user_function, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/api/task.py", line 227, in __decorator_body__
+    worker_result = worker.call(*args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/runtime/task/worker.py", line 294, in call
+    result = self.execute_user_code(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/runtime/task/worker.py", line 1248, in execute_user_code
+    user_returns = self.user_function(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/bsc/bsc019057/TESTING/TUTORIAL_2026/lysozyme_in_water/src/lysozyme_in_water_full.py", line 161, in merge_results
+    exit(7)
+  File "<frozen _sitebuiltins>", line 26, in __call__
+SystemExit: 7
+Traceback (most recent call last):
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/worker/commons/worker.py", line 375, in task_execution
+    task_output = getattr(module, method_name)(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/api/task.py", line 164, in task_decorator
+    return self.__decorator_body__(user_function, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/api/task.py", line 227, in __decorator_body__
+    worker_result = worker.call(*args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/runtime/task/worker.py", line 294, in call
+    result = self.execute_user_code(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/GPP/COMPSs/TrunkRSP/Bindings/python/3/pycompss/runtime/task/worker.py", line 1248, in execute_user_code
+    user_returns = self.user_function(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/bsc/bsc019057/TESTING/TUTORIAL_2026/lysozyme_in_water/src/lysozyme_in_water_full.py", line 161, in merge_results
+    exit(7)
+  File "<frozen _sitebuiltins>", line 26, in __call__
+SystemExit: 7

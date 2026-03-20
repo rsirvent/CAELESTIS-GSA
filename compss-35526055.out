@@ -1,0 +1,146 @@
+Port 43801 is already in use or time_wait, incrementing port by 1
+------ Launching COMPSs application ------
+
+----------------- Executing  --------------------------
+
+
+------------------------------------------------------------
+PROVENANCE | Setting YAML to 'FULL.yaml'
+PROVENANCE | Zipping the resulting COMPSs RO-Crate
+PROVENANCE | Setting provenance folder to 'FULL'
+[ INFO ] Using default execution type: compss
+PROVENANCE | Profiling interval set to 5 second(s)
+
+----------------- Executing lysozyme_in_water_full.py --------------------------
+
+[(521)    API]  -  Starting COMPSs Runtime v3.3.3.post2601 (build 20260128-0106.r4b6d45415bcb502e186d9e569e589b2874bd086a)
+Starting demo
+[(65898)    API]  -  ------- COMPSs Task Execution Summary per Worker ------
+[(65898)    API]  -  --- Summary for COMPSs Worker gs10r2b27-ib0
+[(65898)    API]  -  1 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(65898)    API]  -  0 lysozyme_in_water_full.add_solvate tasks have been executed
+[(65898)    API]  -  3 lysozyme_in_water_full.generate_topology tasks have been executed
+[(65898)    API]  -  0 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(65898)    API]  -  0 lysozyme_in_water_full.merge_results tasks have been executed
+[(65898)    API]  -  0 lysozyme_in_water_full.define_box tasks have been executed
+[(65898)    API]  -  3 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(65898)    API]  -  0 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(65898)    API]  -  0 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(65898)    API]  -  --- Total executed tasks in COMPSs Worker gs10r2b27-ib0: 7
+[(65899)    API]  -  --- Summary for COMPSs Worker gs10r2b47-ib0
+[(65899)    API]  -  1 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.add_solvate tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.generate_topology tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.merge_results tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.define_box tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(65899)    API]  -  --- Total executed tasks in COMPSs Worker gs10r2b47-ib0: 19
+[(65899)    API]  -  --- Summary for COMPSs Worker gs10r2b24-ib0
+[(65899)    API]  -  1 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.add_solvate tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.generate_topology tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.merge_results tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.define_box tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(65899)    API]  -  0 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(65899)    API]  -  --- Total executed tasks in COMPSs Worker gs10r2b24-ib0: 1
+[(65899)    API]  -  -------------------------------------------------------
+[(65899)    API]  -  
+[(65899)    API]  -  ------------ COMPSs Task Execution Summary ------------
+[(65899)    API]  -  3 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.add_solvate tasks have been executed
+[(65899)    API]  -  3 lysozyme_in_water_full.generate_topology tasks have been executed
+[(65900)    API]  -  3 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(65900)    API]  -  0 lysozyme_in_water_full.merge_results tasks have been executed
+[(65900)    API]  -  3 lysozyme_in_water_full.define_box tasks have been executed
+[(65900)    API]  -  6 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(65900)    API]  -  3 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(65900)    API]  -  3 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(65900)    API]  -  Total executed tasks: 27
+[(65900)    API]  -  -------------------------------------------------------
+[(77000)    API]  -  Execution Finished
+PROVENANCE | STARTING WORKFLOW PROVENANCE SCRIPT
+PROVENANCE | Destination folder: FULL
+PROVENANCE | If needed, Provenance generation can be triggered by hand using the following commands:
+	/apps/GPP/COMPSs/TrunkRSP/Runtime/scripts/utils/compss_gengraph svg /home/bsc/bsc019057/.COMPSs/35526055//monitor/complete_graph.dot
+	export PYTHONPATH=/apps/GPP/COMPSs/TrunkRSP/Runtime/scripts/system/:$PYTHONPATH
+	python3 /apps/GPP/COMPSs/TrunkRSP/Runtime/scripts/system/provenance/generate_COMPSs_RO-Crate.py FULL.yaml /home/bsc/bsc019057/.COMPSs/35526055/ FULL true
+PROVENANCE | TIP for BSC cluster users: before triggering generation by hand, run first: salloc --account=<your_group> --qos=gp_debug -p interactive
+PROVENANCE | Generating graph for Workflow Provenance
+PROVENANCE | Number of edges in the graph: 43
+Output file: /home/bsc/bsc019057/.COMPSs/35526055//monitor/complete_graph.svg
+INFO: Generating Graph with legend
+DONE
+PROVENANCE | Ended generating graph for Workflow Provenance. TIME: 0 s
+PROVENANCE | STARTING RO-CRATE GENERATION SCRIPT
+PROVENANCE | Profiling plots generation TIME: 2.16 s.
+PROVENANCE | COMPSs version: '3.3.3.post2601', main_entity: '/gpfs/home/bsc/bsc019057/TESTING/TUTORIAL_2026/lysozyme_in_water/src/lysozyme_in_water_full.py'
+PROVENANCE | COMPSs runtime detected inputs (7)
+PROVENANCE | COMPSs runtime detected outputs (31)
+PROVENANCE | dataprovenance.log processing TIME: 0.001142740249633789 s
+PROVENANCE | Application source files detected (4)
+PROVENANCE | RO-Crate adding source files TIME: 0.0017142295837402344 s
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job1_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job1_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job6_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job6_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job9_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job9_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job12_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job12_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job15_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job15_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job18_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job18_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job20_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job20_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job24_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job24_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job25_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job25_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job2_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job2_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job4_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job4_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job7_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job7_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job11_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job11_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job14_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job14_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job17_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job17_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job21_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job21_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job26_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job26_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job27_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job27_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job3_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job3_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job5_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job5_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job8_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job8_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job10_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job10_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job13_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job13_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job16_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job16_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job19_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job19_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job22_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job22_NEW.err does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job23_NEW.out does not exist. Could not be added to crate.
+PROVENANCE WARNING | File /home/bsc/bsc019057/.COMPSs/35526055/jobs/job23_NEW.err does not exist. Could not be added to crate.
+PROVENANCE | RO-Crate adding statistical data
+PROVENANCE | Added resource profiling information TIME: 0.009022712707519531 s
+PROVENANCE | EAR not enabled
+PROVENANCE | RO-Crate adding CreateAction TIME: 0.011568546295166016 s
+PROVENANCE | RO-Crate Provenance Run Crate profile total TIME: 0.02930426597595215 s
